@@ -4,16 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{DA4BC3D5-625E-46A6-9EFA-902D3D88A2E6}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Tyuiu.BatalovAI.Sprint0.Task2.V0.Lib</RootNamespace>
-    <AssemblyName>Tyuiu.BatalovAI.Sprint0.Task2.V0.Lib</AssemblyName>
+    <ProjectGuid>{D7C921AC-D93F-409A-A19B-C4E83FDC6F4C}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Tyuiu.BatalovAI.Sprint0.Task3.V0</RootNamespace>
+    <AssemblyName>Tyuiu.BatalovAI.Sprint0.Task3.V0</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -41,8 +43,17 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataService.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Tyuiu.BatalovAI.Sprint0.Task3.V0.Lib\Tyuiu.BatalovAI.Sprint0.Task3.V0.Lib.csproj">
+      <Project>{01a6ad5b-3dbb-4811-9718-c0634428fa93}</Project>
+      <Name>Tyuiu.BatalovAI.Sprint0.Task3.V0.Lib</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

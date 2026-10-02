@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Tyuiu.BatalovAI.Sprint0.Task2.V0.Lib
 {
-    public class Class1
+    public class DataService
     {
     }
 }
