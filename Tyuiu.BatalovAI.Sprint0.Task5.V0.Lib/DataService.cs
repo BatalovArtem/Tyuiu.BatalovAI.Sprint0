@@ -22,7 +22,7 @@ namespace Tyuiu.BatalovAI.Sprint0.Task5.V0.Lib
 
         //Пример линейной структуры
         public static int Multiplication(int a, int b)
-        {
+        
             return a * b;
         }
 
