@@ -10,11 +10,10 @@ namespace Tyuiu.BatalovAI.Sprint0.Task1.V0
 
             string name = "Артём";
             int age = 18;
- 
-            Console.WriteLine("Здравствуйте меня зовут " + name + " мне " + age + " лет!");
+
+            Console.WriteLine("Здравствуйте меня зовут " + name + ", мне " + age + " лет!");
 
             Console.ReadKey();
         }
     }
 }
-
